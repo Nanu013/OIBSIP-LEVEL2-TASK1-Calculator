@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    background: linear-gradient(200deg, #ff8800, #3d40d6, #046b00);  
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+
+    height: 32em;
+    width: 28em;
+
+    display:grid;
+    grid-template-rows: repeat(3, 0.5fr) auto;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap:20px;
+    
+    backdrop-filter: blur(8px) saturate(79%);
+    -webkit-backdrop-filter: blur(8px) saturate(79%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0 10px 140px #312564;
+    
+    padding:20px;
+    z-index:1;
+}
+
+.inp{
+    height:100%;
+    width:100%;
+}
+
+.btn--area{
+    display:grid;
+    grid-template-rows:repeat(5,1fr);
+    grid-template-columns: repeat(5,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    text-align: center;
+    margin-bottom:-60px;
+    padding:10px;
+}
+
+.item{
+    border-radius:10px;
+    background:#5036BE;
+    padding:15px;
+    color:#fff;
+    cursor:pointer;
+}
+.item24{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.inp--history{
+    border:2px solid red;
+    height: 500px;
+    width:250px;
+    backdrop-filter: blur(8px) saturate(79%);
+    -webkit-backdrop-filter: blur(8px) saturate(79%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0 10px 140px #312564;
+    padding:20px;
+    margin-left: 20px;
+    overflow-y: auto;
+}
+
+
+.inp--history span{
+    border:1px solid black;
+    background: #000;
+    display: block;
+    width:80%;
+}
+
+
+.inp--history .hist--ol{
+    padding:20px 0 0 20px;
+    font-size: 1.3em;
+    width:90%;
+}
+
+.inp--history .hist--ol .hist--li{
+    margin-bottom:10px;
+    padding:10px;
+    font-weight: 600;
+    border:1px solid rgba(255, 255, 255, 0.125);
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.inp--history .hist--ol .hist--li:hover{
+    border: 2px solid rgba(255, 255, 255, 0.125);
+}
+
+.inp input{
+    width:93%;
+    height:95%;
+    border-radius:15px;
+    border-style: none;
+    position: relative;
+    left:12px;
+    font-size:2em;
+    font-weight: bold;
+    background-color:#718fdb;
+    text-align: right;
+    padding:5px;
+}
+
+.inp input:focus{
+    outline:none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: inherit;
+    border-radius: 10px;;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #7467ad;
+    border-radius: 10px;;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #7467ad;
+}

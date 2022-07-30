@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/74afa9e3bf.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inp">
+        <input type="text" name="num--inp" id="num--inp" maxlength="15" />
+      </div>
+      <div class="btn--area">
+        <div class="item item1" onClick="splOperation('fract')">1/x</div>
+        <div class="item item2" onClick="splOperation('^')">X<sup>2</sup></div>
+        <div class="item item3" id="hist">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+        </div>
+        <div class="item item4" onClick="del()">CE</div>
+        <div class="item item5" onClick="Clear()">C</div>
+        <div class="item item6" onClick="inputFunction(6)">7</div>
+        <div class="item item7" onClick="inputFunction(7)">8</div>
+        <div class="item item8" onClick="inputFunction(8)">9</div>
+        <div class="item item9" onClick="operation('%')">%</div>
+        <div class="item item10" onClick="splOperation('root')">
+          <i class="fa-solid fa-square-root-variable"></i>
+        </div>
+        <div class="item item11" onClick="inputFunction(11)">4</div>
+        <div class="item item12" onClick="inputFunction(12)">5</div>
+        <div class="item item13" onClick="inputFunction(13)">6</div>
+        <div class="item item14" onClick="operation('*')">*</div>
+        <div class="item item15" onClick="operation('/')">/</div>
+        <div class="item item16" onClick="inputFunction(16)">1</div>
+        <div class="item item17" onClick="inputFunction(17)">2</div>
+        <div class="item item18" onClick="inputFunction(18)">3</div>
+        <div class="item item19" onClick="operation('+')">+</div>
+        <div class="item item20" onClick="operation('-')">-</div>
+        <div class="item item21" onClick="inputFunction(21)">.</div>
+        <div class="item item22" onClick="inputFunction(22)">0</div>
+        <div class="item item23" onClick="inputFunction(23)">00</div>
+        <div class="item item24" onClick="calc()">ENTER</div>
+      </div>
+    </div>
+    <div class="inp--history" id="inp--history">
+      <h4>Input History</h4>
+      <span></span>
+      <ol class="hist--ol" id="hist--ol"></ol>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

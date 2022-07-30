@@ -57,53 +57,11 @@ body{
     color:#fff;
     cursor:pointer;
 }
+
 .item24{
     grid-column-start: 4;
     grid-column-end: 6;
 }
-
-.inp--history{
-    border:2px solid red;
-    height: 500px;
-    width:250px;
-    backdrop-filter: blur(8px) saturate(79%);
-    -webkit-backdrop-filter: blur(8px) saturate(79%);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    box-shadow: 0 10px 140px #312564;
-    padding:20px;
-    margin-left: 20px;
-    overflow-y: auto;
-}
-
-
-.inp--history span{
-    border:1px solid black;
-    background: #000;
-    display: block;
-    width:80%;
-}
-
-
-.inp--history .hist--ol{
-    padding:20px 0 0 20px;
-    font-size: 1.3em;
-    width:90%;
-}
-
-.inp--history .hist--ol .hist--li{
-    margin-bottom:10px;
-    padding:10px;
-    font-weight: 600;
-    border:1px solid rgba(255, 255, 255, 0.125);
-    border-radius:12px;
-    cursor:pointer;
-}
-
-.inp--history .hist--ol .hist--li:hover{
-    border: 2px solid rgba(255, 255, 255, 0.125);
-}
-
 .inp input{
     width:93%;
     height:95%;
@@ -120,22 +78,4 @@ body{
 
 .inp input:focus{
     outline:none;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: inherit;
-    border-radius: 10px;;
-}
-  
-::-webkit-scrollbar-thumb {
-    background: #7467ad;
-    border-radius: 10px;;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: #7467ad;
 }

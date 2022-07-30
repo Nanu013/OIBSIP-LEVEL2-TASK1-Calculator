@@ -25,10 +25,8 @@
       </div>
       <div class="btn--area">
         <div class="item item1" onClick="splOperation('fract')">1/x</div>
-        <div class="item item2" onClick="splOperation('^')">X<sup>2</sup></div>
-        <div class="item item3" id="hist">
-          <i class="fa-solid fa-clock-rotate-left"></i>
-        </div>
+        <div class="item item2" onClick="splOperation('sqt')">X<sup>2</sup></div>
+        <div class="item item3" onClick="splOperation('cub')">X<sup>3</sup></div>
         <div class="item item4" onClick="del()">CE</div>
         <div class="item item5" onClick="Clear()">C</div>
         <div class="item item6" onClick="inputFunction(6)">7</div>
@@ -54,12 +52,6 @@
         <div class="item item24" onClick="calc()">ENTER</div>
       </div>
     </div>
-    <div class="inp--history" id="inp--history">
-      <h4>Input History</h4>
-      <span></span>
-      <ol class="hist--ol" id="hist--ol"></ol>
-    </div>
-
     <script src="index.js"></script>
   </body>
 </html>

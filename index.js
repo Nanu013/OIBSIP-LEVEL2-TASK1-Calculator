@@ -14,6 +14,7 @@ function splOperation(splOp) {
   switch (splOp) {
     case 'fract':
         res = 1 / num;
+        document.getElementById('num--inp').value = res;
         break;
     case 'sqt':
         res = num * num;
